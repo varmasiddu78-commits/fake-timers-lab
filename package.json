@@ -1,0 +1,17 @@
+{
+  "name": "fake-timers-lab",
+  "version": "1.0.0",
+  "description": "Lab 6: testing a debounced search and a retry-with-delay function using Jest fake timers",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:coverage": "jest --coverage",
+    "demo:real": "node real-timers-demo.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": ["debounce.js", "retry.js"]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
